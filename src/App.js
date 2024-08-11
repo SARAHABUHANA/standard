@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { Fragment, useEffect,useState } from 'react';
+import axios from 'axios';
+import { NextUIProvider } from "@nextui-org/react";
+import './App.css';
+import Navs from './components/Navs/Navs';
+import Login from './components/Login';
+import Reg from './components/Reg';
+
+import { useTranslation } from 'react-i18next';
+import './components/i18n';
+import ForgetPassword from './components/ForgetPassword';
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Footer  from './components/Footer';
+import Home from './components/Home/Home';
 function App() {
+  const { t ,i18n } = useTranslation();
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+
+     <NextUIProvider>
+
+    
+    <BrowserRouter>
+      <Routes>
+    
+         
+      <Route path="/" element={<Home/>} />
+
+          <Route path="/Reg" element={<Reg/>} />
+          <Route path="/ForgetPassword" element={<ForgetPassword/>} />
+          <Route path="/Login" element={<Login/>} />
+      
+   
+      </Routes>
+    </BrowserRouter>
+    
+    <Footer/>
+    </NextUIProvider>
+   
+    </Fragment>
+
   );
 }
 
 export default App;
+

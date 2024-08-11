@@ -3,12 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mui/base": "^5.0.0-beta.40",
+    "@nextui-org/navbar": "^2.0.36",
+    "@nextui-org/react": "^2.4.6",
+    "@nextui-org/system": "^2.2.5",
+    "@nextui-org/theme": "^2.2.9",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "framer-motion": "^11.3.21",
+    "i18next": "^23.12.2",
+    "postcss": "^8.4.41",
     "react": "^18.3.1",
+    "react-app-polyfill": "^3.0.0",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.0",
+    "react-icons": "^5.2.1",
     "react-scripts": "5.0.1",
+    "tailwindcss": "^3.4.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.26.0"
   }
 }
