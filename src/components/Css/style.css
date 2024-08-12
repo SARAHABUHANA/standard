@@ -9,10 +9,11 @@
      margin-left: 35%;
      margin-bottom: 100px;
 
-border: 1px solid #3ce3ca;
-border-radius: 20px;
+background: url(../../assets/159480862_48982e53-ec1b-455c-84e0-c4d0be71b657.jpg);
+background-size: cover;
+border-radius: 6px;
       height: auto;
-      width: 400px;
+      width: 30vw;
       padding: 40px;
      
 }
@@ -27,42 +28,136 @@ border-radius: 20px;
 .Group{
       margin-bottom: 30px;
       display: flex;
+      justify-content: space-between;
 }
 .bi{
-      margin-right: 10px;
+      margin-top: 10px;
+    color: #b01e28;
+
 }
 .Input{
-      border:1px solid #3ce3ca;
+      border: none;
+      width: 85%;
+      border-bottom:1px solid #79161d;
+      border-radius: 0;
+      background:#ffffff33;
+
       
+      
+}
+.Input:focus{
+      border: none;
+      border:1px solid #79161d;
+      background:#ffffff33;
 }
 .Sub-btn{
       margin-top: 1px;
-      margin-left: 120px;
+      margin-left: 35%;
+      background-color: #79161d ;
+}
+.Sub-btn:hover{
+    background:transparent;
 }
 .Links{
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
        margin-bottom: 20px;
- 
+      text-align: center;
+
 
 }
 .Link{
       text-align: center;   
       margin-bottom: 20px;
+      
+}
+.Links a{
+       text-decoration: underline;
+ 
+      color: #00000090;
 }
 .Link-Home{
       margin-top: 20px;
     text-align: center;
+    color: #00000090;
+
+}
+.Link-Home a{
+    
+    color: #b01e28;
+
 }
 .Forget-btn{
-margin-left: 30px;
+margin-left: 15%;
       display: flex;
-  gap: 20px;
+  gap: 40px;
 }
   .for-btn{
-      width: 200px;
+      width: 90%;
       
   }
+
+  @media (max-width: 600px) {
+      .Reg {
+            margin-left: 10%;
+        width: 80%; /* تعديل عرض ليشمل الشاشات الصغيرة */
+      }
+      .Links,
+      .Link,
+      .Link-Home,
+      .Forget-btn,
+      .for-btn {
+        font-size: 14px; /* تعديل حجم الخط ليشمل الشاشات الصغيرة */
+      }
+      .Links{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+     justify-content: center;
+     width: 100%;
+     gap: 10px;
+      
+     
+     }
+    }
+    
+    /* Media Query لشاشات متوسطة */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .Reg {
+            margin-left: 18%;
+
+        width: 60%; /* تعديل عرض ليشمل الشاشات المتوسطة */
+      }
+      .Links,
+  .Link,
+  .Link-Home,
+  .Forget-btn,
+  .for-btn {
+    font-size: 16px; /* تعديل حجم الخط ليشمل الشاشات المتوسطة */
+  }
+  @media (min-width: 1025px) {
+      .Reg {
+            margin-left: 18%;
+            width: 40%; 
+      }
+                  .Links,
+                  .Link,
+                  .Link-Home,
+                  .Forget-btn,
+                  .for-btn {
+                    font-size: 18px; /* تعيد حجم الخط الأصلي للأجهزة الكبيرة */
+                  }
+      }
+}
+
+    
+    
+   
+
+
+  
   .footer {
       position: fixed;
       display: flex;
