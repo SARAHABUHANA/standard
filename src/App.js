@@ -6,9 +6,9 @@ import './App.css';
 import Navs from './components/Navs/Navs';
 import Login from './components/Login';
 import Reg from './components/Reg';
-
+import Profile from './components/Profile';
 import { useTranslation } from 'react-i18next';
-import './components/i18n';
+import './components/Translation/i18n';
 import ForgetPassword from './components/ForgetPassword';
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Footer  from './components/Footer';
@@ -19,7 +19,7 @@ function App() {
   return (
     <Fragment>
 
-     <NextUIProvider>
+
 
     
     <BrowserRouter>
@@ -31,13 +31,14 @@ function App() {
           <Route path="/Reg" element={<Reg/>} />
           <Route path="/ForgetPassword" element={<ForgetPassword/>} />
           <Route path="/Login" element={<Login/>} />
+          <Route path="/Profile" element={<Profile/>} />
       
    
       </Routes>
     </BrowserRouter>
     
     <Footer/>
-    </NextUIProvider>
+
    
     </Fragment>
 

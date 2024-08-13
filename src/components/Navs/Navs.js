@@ -39,15 +39,15 @@ import { BiUserCircle, BiLogOut, BiCog, BiWorld } from 'react-icons/bi';
               height="60"
               className=""
             />Furniture</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Toggle  aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="Nav">
-          <Nav.Link   variant="underline" defaultActiveKey="/home" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <Nav.Link   variant="underline" defaultActiveKey="/home" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-house" viewBox="0 2 16 16">
   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-</svg>{t("Home")}</Nav.Link>
-          <Nav.Link href="/Reg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square" viewBox="0 0 16 16">
+</svg> {t("Home")}</Nav.Link>
+          <Nav.Link href="/Reg"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-square" viewBox="0 0 16 16">
   <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-</svg>{t("services")}</Nav.Link>
+</svg> {t("services")}</Nav.Link>
           <Nav.Link href="/">{t("Categories")}</Nav.Link>
           <NavDropdown title={t("Menu")} id="basic-nav-dropdown">
          
@@ -86,7 +86,7 @@ import { BiUserCircle, BiLogOut, BiCog, BiWorld } from 'react-icons/bi';
       <input type="checkbox" className="User-input" id="userOptions" />
 
       <ul className="User-menu">
-        <li><Nav.Link href="/profile"><BiUserCircle size={16} />{t("Profile")}</Nav.Link></li>
+        <li><Nav.Link href="/Profile"><BiUserCircle size={16} />{t("Profile")}</Nav.Link></li>
         <li><Nav.Link href="/logout" onClick={handleLogout}><BiLogOut size={16} /> {t("Logout")}</Nav.Link></li>
         <li><Nav.Link href="/settings"><BiCog size={16} /> {t("Settings")}</Nav.Link></li>
         <li>{t("Language")}: <span onClick={() => changeLanguage('en')}><BiWorld size={16} />Ar</span>, <span onClick={() => changeLanguage('ar')}><BiWorld size={16} />En</span></li>

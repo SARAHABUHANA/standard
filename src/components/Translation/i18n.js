@@ -6,7 +6,7 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        Login: " Login",
+        Login: " تسجيل الدخول",
         Customers:"الزبائن",
         Home:" الرئيسية",
         Menu:"القائمة",
@@ -15,7 +15,13 @@ i18n.use(initReactI18next).init({
         Categories:"الأقسام",
         Profile:"الملف الشخصي",
         Register:"إنشاء حساب ",
-        Sign_Up:"تسجيل الدخول "
+        "sign up":"إنشاء حساب  ",
+        "Best  Design of Furnitur":"أفضل التصاميم من الأثاث",
+        Password:"كلمة المرور",
+        Email:"البريد الإلكتروني",
+        "Phone number":"رقم الهاتف ",
+        "Full name":"الاسم الكامل ",
+        "New Account":"حساب جديد"
         
       }
     },
@@ -25,13 +31,18 @@ i18n.use(initReactI18next).init({
         "الزبائن":"Customers",
         " الرئيسية ":"Home",
         "القائمة":"Menu",
-        "تسجيل الدخول ":"Sign Up",
+        "تسجيل الدخول ":"sign in",
         "الخدمات":"services",
          "الأقسام": "Categories",
          "الملف الشخصي":"Profile",
-         "تسجيل الدخول ":"Sign Up",
-         " إنشاء حساب "  :"Register"
-       
+         "تسجيل الدخول ":"Sign up",
+         " إنشاء حساب "  :"sign up",
+         "أفضل التصاميم من الأثاث":"Best  Design of Furnitur",
+         "الاسم الكامل ":"Full name",
+         "كلمة المرور":"password",
+         "البريد الإلكتروني":"Email",
+         "رقم الهاتف ":"phone number",
+         "حساب جديد":"New Account",
       }
     },
     sp: {
